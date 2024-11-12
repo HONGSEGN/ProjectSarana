@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('layouts.master');
+})->name('layouts.index');
+
+Route::get('index', function () {
+    return view('calender.index');
+})->name('calender.index');
+
+Route::get('index', function () {
+    return view('calender.index');
+})->name('calender.index');
+
+Route::get('index', function () {
+    return view('calender.index');
+})->name('calender.index');
+
+Route::get('login', function () {
+    return view('auths.login');
+})->name('auths.login');
+
+Route::get('register', function () {
+    return view('auths.register');
+})->name('auths.register');
